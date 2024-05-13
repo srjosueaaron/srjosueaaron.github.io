@@ -1,0 +1,35 @@
+# Site Settings
+title: srjosueaaron
+author: Victor Silva
+
+permalink: /:title/ #/:categories/:title/
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-gist
+
+addons:
+  back_to_top            : true                 # true (default), false
+  share_post             : true                 # true (default), false
+
+
+header_pages:
+#  - _pages/about.md
+#  - _pages/contact.md
+#  - _pages/setup.md
+  - _pages/github.md
+  - _pages/search.md
+  - _pages/categories.md
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - whiteblogtheme.gemspec
+
+comments:
+  provider               : "disqus"             # false (default), "disqus"
+  disqus:
+    shortname            : "vmsilvamolina"
